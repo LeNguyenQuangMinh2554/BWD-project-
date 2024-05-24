@@ -1,0 +1,557 @@
+/* Phần đầu tiêu đề --------------------------*/
+
+body {
+    background: linear-gradient(85deg, #ccff33, #ffff66, #ffff00, #ffcc00, #ff9900, #cc3300, #990000);
+    font-family: "Dancing Script", cursive;
+    color: black;
+    animation: xuat-hien-animation;
+    animation-duration: 2s;
+}
+
+#icon-fanpage img {
+    margin: 20px;
+    margin-bottom: 0px;
+    text-align: right;
+    width: 50px;
+    height: 50px;
+}
+
+#icon-fanpage {
+    text-align: right;
+}
+
+#home-page {
+    text-align: left;
+}
+
+#home-page img {
+    margin: 20px;
+    margin-bottom: 0px;
+    width: 7vw;
+    height: auto;
+}
+
+#icon-title {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#myVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55vw;
+    object-fit: cover;
+    z-index: -1;
+
+}
+
+@keyframes xuat-hien-animation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header {
+    color: white;
+    text-align: center;
+    text-shadow:
+        2px 2px 2px rgb(255, 0, 0),
+        -2px 2px 2px rgb(0, 0, 255),
+        2px -2px 2px rgb(255, 225, 0),
+        -2px -2px 2px rgb(255, 0, 255);
+}
+
+
+
+h1 {
+    margin-top: 5%;
+    font-size: 10vw;
+    animation: xuat-hien-animation;
+    animation-duration: 5s;
+
+}
+
+#title {
+    font-size: 8vw;
+    margin-bottom: 3em;
+    animation: xuat-hien-animation;
+    animation-duration: 9s;
+
+}
+
+/*Phần thân--------------------------------------*/
+
+#mo-dau {
+    font-size: 5vw;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-shadow: 2px 2px 4px white;
+    z-index: 1;
+}
+
+#dau-phan-than {
+    margin-top: 20%;
+}
+
+#fixed-background-one {
+    background-image: url('https://mia.vn/media/uploads/blog-du-lich/pho-co-hoi-an-di-san-kien-truc-an-tuong-cua-the-gioi-5-1617434089.jpg');
+    background-attachment: fixed;
+}
+
+#fixed-background-two {
+    background-image: url('https://images2.thanhnien.vn/528068263637045248/2023/4/4/hoi-an-1680591517857660432696.jpg');
+    background-attachment: fixed;
+}
+
+#fixed-background-three {
+    background-image: url('https://taghusa.com/wp-content/uploads/2021/11/Net-dac-trung-trong-van-hoa-am-thuc-pho-co-Hoi-An-o.jpg');
+    background-attachment: fixed;
+}
+
+#fixed-background-four {
+    background-image: url('https://static.vinwonders.com/2022/05/le-hoi-hoa-dang-hoi-an-thumb-1.jpg');
+    background-attachment: fixed;
+}
+
+h2 {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 70px;
+    width: 80%;
+    color: white;
+    background: linear-gradient(90deg, #602020, #603020, #604020, #605020, #606020, #506020, #406020, #306020, #302060, #206030, #206040, #206050, #206060, #205060, #204060, #203060, #202060, #302060, #402060, #502060, #602060, #602050, #602040, #602030, #602020) !important;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
+        -5px 5px 5px rgba(0, 0, 0, 0.5),
+        5px -5px 5px rgba(0, 0, 0, 0.5),
+        -5px -5px 5px rgba(0, 0, 0, 0.5);
+
+    text-shadow:
+        5px 5px 5px rgba(0, 0, 0, 0.4),
+        -5px 5px 5px rgba(0, 0, 0, 0.4),
+        5px -5px 5px rgba(0, 0, 0, 0.4),
+        -5px -5px 5px rgba(0, 0, 0, 04);
+}
+
+
+section {
+    color: white;
+    margin-bottom: 2%;
+}
+
+/* hiệu ứng card */
+.card {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 600px;
+    perspective: 1000px;
+    margin: 5%;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
+        -5px 5px 5px rgba(0, 0, 0, 0.5),
+        5px -5px 5px rgba(0, 0, 0, 0.5),
+        -5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.card-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(-180deg);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-front {
+    text-shadow:
+        10px 10px 10px rgba(0, 0, 0, 1),
+        -10px 10px 10px rgba(0, 0, 0, 1),
+        10px -10px 10px rgba(0, 0, 0, 1),
+        -10px -10px 10px rgba(0, 0, 0, 1);
+}
+
+.card h3 {
+    font-family: Sedan SC, sans-serif;
+    font-size: 40px;
+    margin: 0px;
+    padding: 20px;
+    text-align: center;
+    text-shadow:
+        1.5px 1.5px 1.5px rgb(255, 0, 0),
+        -1.5px 1.5px 1.5px rgb(0, 0, 255),
+        1.5px -1.5px 1.5px rgb(255, 225, 0),
+        -1.5px -1.5px 1.5px rgb(255, 0, 255);
+}
+
+.card p {
+    font-family: Playfair Display;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+button {
+    text-decoration: none;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, yellow, coral);
+    height: 120px;
+    width: 200px;
+    border-radius: 5px;
+    color: #cc0052;
+    font-size: 40px;
+    text-shadow: 1px 1px 2px black;
+    font-family: Playfair Display;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
+        -5px 5px 5px rgba(0, 0, 0, 0.5),
+        5px -5px 5px rgba(0, 0, 0, 0.5),
+        -5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép các thẻ "break" sang hàng mới */
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Victoria-Hoi-An-Beach-Resort-front {
+
+    background-image: url('https://cdn.audleytravel.com/2702/1930/79/520791-pool-at-the-victoria-hoi-an-beach-resort--spa.jpg');
+
+}
+
+#Victoria-Hoi-An-Beach-Resort-back {
+    background-image: url('https://cdn.audleytravel.com/2702/1930/79/520791-pool-at-the-victoria-hoi-an-beach-resort--spa.jpg');
+
+}
+
+#Four-Seasons-Resort-The-Nam-Hai-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/oc-dao-nghi-duong-nam-hai-696x465.jpg');
+}
+
+#Four-Seasons-Resort-The-Nam-Hai-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/oc-dao-nghi-duong-nam-hai-696x465.jpg');
+}
+
+#La-Siesta-Hoi-An-Resort-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/pho-co-696x693.jpg');
+}
+
+#La-Siesta-Hoi-An-Resort-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/pho-co-696x693.jpg');
+}
+
+#Pho-co-Hoi-An-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/pho-co-696x693.jpg');
+}
+
+#Pho-co-Hoi-An-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/pho-co-696x693.jpg');
+}
+
+#Chua-Cau-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/chua-cau.jpg');
+}
+
+#Chua-Cau-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/chua-cau.jpg');
+}
+
+#Lang-rau-Tra-Que-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/lang-rau-tra-que.jpg');
+}
+
+#Lang-rau-Tra-Que-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/lang-rau-tra-que.jpg');
+}
+
+#Lang-gom-Thanh-Ha-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/lang-gom-thanh-ha-500-nam-tuoi-696x464.jpg');
+}
+
+#Lang-gom-Thanh-Ha-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/lang-gom-thanh-ha-500-nam-tuoi-696x464.jpg');
+}
+
+#Bien-Cua-Dai-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/bien-cua-dai-696x387.jpg');
+}
+
+#Bien-Cua-Dai-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/bien-cua-dai-696x387.jpg');
+}
+
+#Cu-Lao-Cham-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/cu-lao-cham.jpg');
+}
+
+#Cu-Lao-Cham-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/cu-lao-cham.jpg');
+}
+
+#Cao-lau-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/cao-lau-696x455.jpg');
+}
+
+#Cao-lau-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/cao-lau-696x455.jpg');
+}
+
+#Banh-Mi-Phuong-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/banh-mi-phuong.jpg');
+}
+
+#Banh-Mi-Phuong-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/banh-mi-phuong.jpg');
+}
+
+#Com-Ga-ba-Buoi-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/com-ga-ba-buoi-696x494.jpg');
+}
+
+#Com-Ga-ba-Buoi-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/com-ga-ba-buoi-696x494.jpg');
+}
+
+#Banh-đap-hen-xao-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/banh-dap-hen-xao-696x521.jpg');
+}
+
+#Banh-đap-hen-xao-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/banh-dap-hen-xao-696x521.jpg');
+}
+
+#Che-bap-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/che-bap-696x392.jpg');
+}
+
+#Che-bap-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/che-bap-696x392.jpg');
+}
+
+
+#Le-hoi-hoa-dang-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/hoi-hoa-dang-696x462.jpg');
+}
+
+
+#Le-hoi-hoa-dang-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/hoi-hoa-dang-696x462.jpg');
+}
+
+#Le-hoi-Cau-Bong-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/hoi-cau-bong-696x487.jpg');
+}
+
+
+#Le-hoi-Cau-Bong-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/hoi-cau-bong-696x487.jpg');
+}
+
+#Le-hoi-Tet-Nguyen-Dan-front {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/hoat-dong-trong-dip-tet-696x522.jpg');
+}
+
+#Le-hoi-Tet-Nguyen-Dan-back {
+    background-image: url('https://bloganchoi.com/wp-content/uploads/2024/04/hoat-dong-trong-dip-tet-696x522.jpg');
+}
+
+#conclusion {
+    font-size: 40px;
+    font-family: Platypi;
+}
+
+.thong-ke {
+    height: 100vh;
+
+}
+
+/* CSS cho grid container */
+.thongke-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Cho phép các thẻ "break" sang hàng mới */
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    text-shadow:
+        1px 1px 1px rgb(255, 0, 0),
+        -1px 1px 1px rgb(0, 0, 255),
+        1px -1px 1px rgb(255, 225, 0),
+        -1px -1px 1px rgb(255, 0, 255);
+}
+
+#thongke-img {
+    width: 550px;
+    text-align: center;
+}
+
+#thongke-p {
+    font-size: 36px;
+    width: 550px;
+
+}
+
+.animated-number {
+    font-size: 32;
+    color: #00ff99;
+    text-shadow:
+        1px 1px 1px rgb(255, 0, 0),
+        -1px 1px 1px rgb(0, 0, 255),
+        1px -1px 1px rgb(255, 225, 0),
+        -1px -1px 1px rgb(255, 0, 255);
+}
+
+aside {
+    background-color: white;
+    text-shadow:
+        1px 1px 1px rgb(255, 0, 0),
+        -1px 1px 1px rgb(0, 0, 255),
+        1px -1px 1px rgb(255, 225, 0),
+        -1px -1px 1px rgb(255, 0, 255);
+}
+
+/* CSS styles for the slider */
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    height: calc(50vw / 3);
+    /* Chiều cao tỷ lệ theo chiều rộng */
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    width: 200%;
+    /* Đảm bảo chứa các bản sao để tạo hiệu ứng vô tận */
+    height: 100%;
+    animation: slide 20s linear infinite;
+}
+
+.slider a {
+    width: calc(100% / 6);
+    /* Có tổng cộng 6 hình ảnh */
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slider img {
+    width: 99%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Dừng animation khi trỏ chuột vào */
+.slider-container:hover .slider {
+    animation-play-state: paused;
+}
+
+
+#menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li {
+    margin-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+#top-up {
+    font-size: 3rem;
+    cursor: pointer;
+    position: fixed;
+    z-index: 9999;
+    color: #004993;
+    bottom: 20px;
+    right: 15px;
+    display: none;
+}
+
+#top-up:hover {
+    color: #333
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.footer-item {
+    margin: 10px;
+}

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vẻ đẹp hoài cổ và lung linh!">
+    <meta name="keywords" content="Hội An, du lịch, di sản, văn hóa, ẩm thực">
+    <script src="HoiAn.js"></script>
+    <link rel="stylesheet" href="HoiAn.css">
+
+    <title>Du lịch Hội An: Vẻ đẹp hoài cổ và lung linh!</title>
+    <link rel="icon" href="video-and-image\hoi-an-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&family=Platypi:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sedan+SC&display=swap"
+        rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- import icon font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <!-- Import thư viện JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // kéo xuống khoảng cách 500px thì xuất hiện nút Top-up
+        var offset = 500;
+        // thời gian di trượt 0.75s ( 1000 = 1s )
+        var duration = 750;
+        $(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > offset)
+                    $('#top-up').fadeIn(duration); else
+                    $('#top-up').fadeOut(duration);
+            });
+            $('#top-up').click(function () {
+                $('body,html').animate({ scrollTop: 0 }, duration);
+            });
+        });
+    </script>
+    <div title="Về đầu trang" id="top-up">
+        <i class="fas fa-space-shuttle fa-rotate-270"></i>
+    </div>
+
+</head>
+
+<body>
+    <aside id="icon-title">
+        <div id="home-page" onclick="toggleMenu()">
+            <img src="video-and-image\hoi-an-icon.png" alt="home-page">
+        </div>
+
+        <div id="icon-fanpage">
+            <a href="https://web.facebook.com/nghiaphan201" target="_blank"><img src="video-and-image\facebook-icon.png"
+                    alt="Facebook"></a>
+            <a href="https://twitter.com/didulichHoiAn" target="_blank"><img src="video-and-image\twitter-icon.png"
+                    alt="Twitter"></a>
+            <a href="https://www.instagram.com/dulichhoian.99/" target="_blank"><img
+                    src="video-and-image\instagram-icon.png" alt="Instagram"></a>
+        </div>
+    </aside>
+
+    <div id="menu" style="display: none;">
+        <ul>
+            <li><a href="#dau-phan-than" onclick="scrollToSection('#section1')">NƠI LƯU TRÚ Ở HỘI AN</a></li>
+            <li><a href="#fixed-background-two" onclick="scrollToSection('#section2')">ĐIỂM THAM QUAN Ở HỘI AN</a></li>
+            <li><a href="#fixed-background-three" onclick="scrollToSection('#section3')">ẨM THỰC NỔI BẬT TẠI HỘI AN</a>
+            </li>
+            <li><a href="#fixed-background-four" onclick="scrollToSection('#section4')">LỄ HỘI TẠI HỘI AN</a></li>
+            <li><a href="#thong-ke" onclick="scrollToSection('#section5')">QUY MÔ & THÀNH TỰU</a></li>
+            <li><a href="#doi-tac" onclick="scrollToSection('#section6')">ĐỐI TÁC</a></li>
+        </ul>
+    </div>
+
+
+
+    <header class="header-title">
+        <h1 class="header">DU LỊCH HỘI AN</h1>
+        <p class="header" id="title">Vẻ đẹp hoài cổ và lung linh!</p>
+        <video id="myVideo" autoplay muted loop>
+            <source src="video-and-image/TRAILER PHIM TÀI LIỆU - HỘI AN – MỸ CẢM TỪ KIẾN TRÚC 4K .mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </header>
+
+
+
+    <main>
+        <article id="mo-dau" data-aos="zoom-in-down">
+            <p> Hội An, thành phố thuộc tỉnh Quảng Nam, Việt Nam, từ lâu đã trở thành điểm đến
+                thu hút du khách trong và
+                ngoài
+                nước. Nơi đây nổi tiếng với những ngôi nhà cổ kính, những con đường nhỏ uốn lượn, và dòng sông Hoài thơ
+                mộng. Du
+                lịch Hội An là một trải nghiệm độc đáo, đưa du khách trở về với quá khứ, hòa mình vào văn hóa và lịch sử
+                của
+                một
+                thương cảng sầm uất một thời.</p>
+        </article>
+
+        <section class="container-card" id="fixed-background-one">
+            <h2 id="dau-phan-than" data-aos="flip-left">NƠI LƯU TRÚ Ở HỘI AN</h2>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Victoria-Hoi-An-Beach-Resort-front">
+                        <h3>Victoria Hoi An Beach Resort &amp; Spa</h3>
+
+                        <p>Khu nghỉ dưỡng 5 sao sang trọng nằm trên bãi biển Cửa Đại, cách trung tâm phố cổ Hội An
+                            khoảng 4 km.
+                            Resort
+                            có hồ
+                            bơi ngoài trời, spa, phòng tập gym, nhà hàng, quán bar,…</p>
+                    </div>
+                    <div class="card-back" id="Victoria-Hoi-An-Beach-Resort-back">
+                        <a href="https://www.youtube.com/watch?v=iXpWPTAKDgQ&ab_channel=VictoriaHotels%26Resorts"
+                            target="_blank"><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Four-Seasons-Resort-The-Nam-Hai-front">
+                        <h3>Four Seasons Resort The Nam Hai</h3>
+
+                        <p>Resort 5 sao cao cấp nằm trên bãi biển Cửa Đại, cách phố cổ khoảng 7 km. Resort cung cấp
+                            nhiều dịch
+                            vụ tiện
+                            ích
+                            cho du khách như hồ bơi, dịch vụ ăn uống, quầy nước, spa,…</p>
+                    </div>
+                    <div class="card-back" id="Four-Seasons-Resort-The-Nam-Hai-back">
+
+                        <a href="https://youtu.be/lmfUzj60N9w" target="_blank" :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="La-Siesta-Hoi-An-Resort-front">
+                        <h3>La Siesta Hoi An Resort &amp; Spa</h3>
+
+                        <p>Homestay 4 sao nằm trong khu phố cổ Hội An, cách Chùa Cầu khoảng 500 m. Homestay có các dịch
+                            vụ như
+                            hồ bơi,
+                            khu
+                            vực ăn, quầy bar,…</p>
+
+
+                        <p>Ngoài ra Hội An còn có rất nhiều resort, homestay, khách sạn đa dạng với nhiều mức giá,
+                            dịch
+                            vụ khác
+                            nhau cho
+                            du
+                            khách lựa chọn. Bạn có thể tham khảo thêm các khách sạn, homestay khác trên Google hoặc
+                            các
+                            trang
+                            web đặt
+                            phòng
+                            trực tuyến,…</p>
+
+                    </div>
+                    <div class="card-back" id="La-Siesta-Hoi-An-Resort-back">
+
+                        <a href="https://www.youtube.com/watch?v=ARbjQ1xsEZQ&ab_channel=ATAHolidays" target="_blank"
+                            :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-card" id="fixed-background-two">
+            <h2 data-aos="flip-right">ĐIỂM THAM QUAN Ở HỘI AN</h2>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Pho-co-Hoi-An-front">
+                        <h3>Phố cổ Hội An</h3>
+
+                        <p>Di sản văn hóa thế giới được UNESCO công nhận, với những dãy nhà cổ kính được xây dựng từ thế
+                            kỷ 15
+                            đến thế
+                            kỷ
+                            19. Du khách có thể tham quan các nhà cổ như nhà Tấn Ký, nhà Phùng Hưng, nhà Quảng Đông, hội
+                            quán
+                            Phúc Kiến,
+                            chùa Cầu,…</p>
+                    </div>
+                    <div class="card-back" id="Pho-co-Hoi-An-back">
+
+                        <a href="https://youtu.be/9nYDcx31DlU" target="_blank" :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Chua-Cau-front">
+                        <h3>Chùa Cầu</h3>
+
+                        <p>Biểu tượng của Hội An, được xây dựng vào thế kỷ 17 với kiến trúc độc đáo kết hợp giữa văn hóa
+                            Việt
+                            Nam, Trung
+                            Quốc và Nhật Bản.</p>
+                    </div>
+                    <div class="card-back" id="Chua-Cau-back">
+
+                        <a href="https://youtu.be/EV3qxxLYvtU" target="_blank" :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Lang-rau-Tra-Que-front">
+                        <h3>Làng rau Trà Quế</h3>
+
+                        <p>Nơi du khách có thể trải nghiệm trồng rau theo phương pháp truyền thống, thưởng thức các món
+                            ăn được
+                            chế biến
+                            từ
+                            rau tươi ngon.</p>
+                    </div>
+                    <div class="card-back" id="Lang-rau-Tra-Que-back">
+
+                        <a href="https://youtu.be/WQ6hpBsAQYM" target="_blank" :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Lang-gom-Thanh-Ha-front">
+                        <h3>Làng gốm Thanh Hà</h3>
+
+                        <p>Nơi du khách có thể tìm hiểu về nghề làm gốm truyền thống, tự tay làm ra những sản phẩm gốm
+                            độc đáo.
+                        </p>
+                    </div>
+                    <div class="card-back" id="Lang-gom-Thanh-Ha-back">
+
+                        <a href="https://youtu.be/A1CPn-rIZQ8" target="_blank" :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Bien-Cua-Dai-front">
+                        <h3>Biển Cửa Đại </h3>
+
+                        <p>Bãi biển đẹp với bờ cát trắng mịn, nước biển trong xanh, thích hợp cho các hoạt động tắm
+                            biển, tắm
+                            nắng, chơi
+                            các
+                            môn thể thao trên biển.</p>
+                    </div>
+                    <div class="card-back" id="Bien-Cua-Dai-back">
+
+                        <a href="https://youtu.be/nv-tGurci0U" target="_blank" :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Cu-Lao-Cham-front">
+
+                        <h3>Cù Lao Chàm</h3>
+
+                        <p>Hòn đảo xinh đẹp với hệ sinh thái đa dạng, thích hợp cho các hoạt động lặn biển, ngắm san hô,
+                            khám
+                            phá hang
+                            động.
+                        </p>
+                    </div>
+                    <div class="card-back" id="Cu-Lao-Cham-back">
+
+                        <a href="https://youtu.be/vPXrBuUN-Lw" target="_blank" :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-card" id="fixed-background-three">
+            <h2 data-aos="flip-up">ẨM THỰC NỔI BẬT TẠI HỘI AN</h2>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Cao-lau-front">
+                        <h3>Cao lầu</h3>
+
+                        <p>Món ăn đặc sản của Hội An với sợi mì vàng dai dai, ăn kèm với thịt xá xíu, rau thơm và nước
+                            lèo đậm
+                            đà.</p>
+
+                    </div>
+                    <div class="card-back" id="Cao-lau-back"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Banh-Mi-Phuong-front">
+                        <h3>Bánh mì Phượng</h3>
+
+                        <p>Bánh mì kẹp thịt nướng thơm ngon, được mệnh danh là “bánh mì ngon nhất thế giới”.</p>
+                    </div>
+                    <div class="card-back" id="Banh-Mi-Phuong-back"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Com-Ga-ba-Buoi-front">
+                        <h3>Cơm gà Bà Buội</h3>
+
+                        <p>Món ăn dân dã với cơm trắng dẻo thơm, gà luộc chín tới, ăn kèm với nước luộc gà và rau sống.
+                        </p>
+                    </div>
+                    <div class="card-back" id="Com-Ga-ba-Buoi-back"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Banh-đap-hen-xao-front">
+                        <h3>Bánh đập hến xào</h3>
+
+                        <p>Món ăn vặt được nhiều du khách yêu thích, với bánh tráng nướng giòn rụm, bánh ướt mềm mịn,
+                            hến xào
+                            cay cay.
+                        </p>
+                    </div>
+                    <div class="card-back" id="Banh-đap-hen-xao-back"></div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Che-bap-front">
+                        <h3>Chè bắp</h3>
+
+                        <p>Món chè thanh mát, ngọt dịu, được nấu từ bắp non và nước cốt dừa.</p>
+                    </div>
+                    <div class="card-back" id="Che-bap-back"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-card" id="fixed-background-four">
+            <h2 data-aos="flip-down">LỄ HỘI TẠI HỘI AN</h2>
+
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Le-hoi-hoa-dang-front">
+                        <h3>Lễ hội hoa đăng</h3>
+
+                        <p>Lễ hội được tổ chức vào ngày 14 âm lịch hàng tháng, với hàng nghìn chiếc đèn lồng được thả
+                            xuống sông
+                            Hoài,
+                            tạo
+                            nên khung cảnh lung linh huyền ảo</p>
+                    </div>
+                    <div class="card-back" id="Le-hoi-hoa-dang-back">
+
+                        <a href="https://youtu.be/qKbHJuCONbY" target="_blank" :><button type="button">Xem
+                                Trailer</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Le-hoi-Cau-Bong-front">
+                        <h3>Lễ hội Cầu Bông</h3>
+
+                        <p>Lễ hội được tổ chức vào ngày 14 tháng Giêng âm lịch, với các hoạt động tế lễ cầu an, cầu cho
+                            một năm
+                            mới mưa
+                            thuận gió hòa.</p>
+                    </div>
+                    <div class="card-back" id="Le-hoi-Cau-Bong-back"></div>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front" id="Le-hoi-Tet-Nguyen-Dan-front">
+                        <h3>Lễ hội Tết Nguyên Đán</h3>
+
+                        <p>Lễ hội được tổ chức vào dịp Tết Nguyên Đán, với các hoạt động múa lân, múa rồng, diễu hành,
+                            chúc
+                            Tết,…</p>
+                    </div>
+                    <div class="card-back" id="Le-hoi-Tet-Nguyen-Dan-back"></div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <aside data-aos="flip-up" id="conclusion">
+            <p>
+                Nên đi du lịch Hội An vào mùa khô, từ tháng 2 đến tháng 4 và từ tháng 9 đến tháng 11, vì lúc này thời
+                tiết
+                đẹp,
+                ít mưa. Nên mặc trang phục lịch sự khi tham quan các di tích lịch sử, văn hóa và không nên bỏ qua các
+                món ăn
+                đặc
+                sản của Hội An.</p>
+
+            <p>Du lịch Hội An là một trải nghiệm độc đáo, đưa du khách trở về với quá khứ, hòa mình vào văn hóa và lịch
+                sử
+                của
+                một thương cảng sầm uất một thời. Với những di sản văn hóa, lịch sử, ẩm thực phong phú, Hội An luôn chào
+                đón
+                du
+                khách đến tham quan và khám phá.</p>
+        </aside>
+
+        <div id="thong-ke" class="thongke-container">
+            <img src="video-and-image/HOI-AN.png" alt="Beautiful landscape" class="thongke-item" id="thongke-img">
+            <div class="thongke-item" id="thongke-p">
+                <p data-aos="fade-left">Hơn 40 địa điểm</p>
+                <p data-aos="fade-right">du lịch Hội An</p>
+                <p data-aos="zoom-in">Hội An, một điểm đến du lịch nổi tiếng ở Việt Nam, rộng lớn và đa dạng với hơn 40
+                    địa điểm khám phá. Từ những con đường cổ kính đến những bãi biển tuyệt đẹp như An Bang và Cửa Đại,
+                    Hội An hứa hẹn mang đến cho du khách những trải nghiệm độc đáo và bất ngờ. Khám phá phố cổ rực rỡ
+                    màu sắc, thưởng thức ẩm thực địa phương, hay thả mình dưới ánh nắng vàng trên bờ biển, tất cả đều là
+                    những trải nghiệm không thể quên khi đến với Hội An.</p>
+                <p id="luot-khach">Khoảng <span id="luot-khach-so" class="animated-number"
+                        data-final-number="4000000">0</span> lượt khách đến Hội An trong năm 2023.</p>
+                <p id="doanh-thu">Doanh thu ước đạt khoảng <span id="doanh-thu-so" class="animated-number"
+                        data-final-number="4139000000000">0</span> đồng.</p>
+            </div>
+        </div>
+
+        <div id="doi-tac">
+            <p
+                style="text-align: center; font-size: 60px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Đối tác</p>
+            <p
+                style="text-align: center; font-size: 54px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+                Các đối tác hợp tác</p>
+
+            <div class="slider-container" id="slider-container">
+                <div class="slider" id="slider">
+                    <a href="https://www.victoriahotels.asia/en/destination/victoria-hoi-an/" target="_blank"><img
+                            src="video-and-image\Victoria.png" alt="Partner 1"></a>
+
+                    <a href="https://www.fourseasons.com/hoian/" target="_blank"><img
+                            src="video-and-image\FourSeasons.png" alt="Partner 2"></a>
+
+                    <a href="https://lasiestaresorts.com/" target="_blank"><img src="video-and-image\Lasiesta.png"
+                            alt="Partner 3"></a>
+
+
+                    <a href="https://www.victoriahotels.asia/en/destination/victoria-hoi-an/" target="_blank">
+                        <img src="video-and-image\Victoria.png" alt="Partner 1"></a>
+
+                    <a href="https://www.fourseasons.com/hoian/" target="_blank">
+                        <img src="video-and-image\FourSeasons.png" alt="Partner 2"></a>
+
+                    <a href="https://lasiestaresorts.com/" target="_blank">
+                        <img src="video-and-image\Lasiesta.png" alt="Partner 3"></a>
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-item">
+            <p> LMN Group</p>
+            <p> Bản quyền © 2024 - LMN Group. Inc.</p>
+            <p> LMN Group là một trong nhiều nhóm tham gia cuộc thi Best Web Design 2024, do VKU tổ chức. Gồm có 4 thành
+                viên: </p>
+
+            <p> Lê Nguyễn Quang Minh - 23IT.B131</p>
+            <p> Lê Thị Kiều Loan - 23IT.B117</p>
+            <p> Nguyễn Đức Nhị - 23IT.B156</p>
+            <p> Thái Thành Trung - 23AI.051</p>
+
+            <p> Liên lạc với chúng tôi: </p>
+
+            <p> Gmail: lenguyenquangminh2554@gmail.com</p>
+
+            <p> Số điện thoại: 0389520145</p>
+        </div>
+    </footer>
+</body>
+<script>
+    AOS.init(); 
+</script>
+<script src="HoiAn.js"></script>
+
+</html>
